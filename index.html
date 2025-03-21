@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Form</title>
+  <style>
+    h2 {
+      text-align: center;
+      color: #000000;
+    }
+    form {
+      width: 50%;
+      margin: 0 auto;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      padding: 10px;
+      background-color: #00adeb;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1d66db;
+    }
+  </style>
+</head>
+<body>
+  <h2>Web Form</h2>
+  <form>
+    Name:
+    <input type="text" placeholder="Full Name" id="name" required /> <br>
+    Email:
+    <input type="email" placeholder="Email" id="email" required /><br>
+    Password:<br>
+    <input type="password" placeholder="Password" id="password" required minlength="6" /><br>
+    Date of birth: <br>
+    <input type="date" id="dob" required /><br>
+    Gender:
+    <br>
+    <select id="gender" required>
+      <option value="">Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select><br>
+    <button type="submit">Submit</button><br>
+  </form>
+
+</body>
+</html>
